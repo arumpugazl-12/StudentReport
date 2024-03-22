@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SideNav from "../Components/SIdeNavigation/SideNav";
+import Card from "../Components/Card/Card";
 const Home = () => {
   const data = { name: "naveen", age: "18" };
 
@@ -14,7 +15,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="Department"></div>
+        <div>
+          <Link to={"/submit-report"} className="link">
+            <Card />
+          </Link>
+        </div>
       </div>
     </div>
   );
